@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:endColor="#CDC313"
+                android:gradientRadius="1000"
+                android:centerX="0.9"
+                android:centerY="0.25"
+                android:startColor="#FFFFFF"
+                android:type="radial"/>
+            
+
+
+            <corners
+                android:topRightRadius="@dimen/radius_10dp"
+                android:topLeftRadius="@dimen/radius_10dp"
+                android:bottomRightRadius="@dimen/radius_10dp"
+                android:bottomLeftRadius="@dimen/radius_10dp"
+                />
+        </shape>
+    </item>
+
+
+    <item
+        android:bottom="@dimen/padding_10dp"
+        android:left="@dimen/padding_10dp"
+        android:right="@dimen/padding_10dp"
+        android:top="@dimen/padding_10dp">
+        <shape android:shape="rectangle" >
+            <gradient
+                android:endColor="#6A8BEB"
+                android:gradientRadius="@dimen/height_100dp"
+                android:centerX="0.5"
+                android:centerY="0.5"
+                android:angle="45"
+                android:startColor="#0038FF"
+                android:type="linear"/>
+            <corners
+                android:topRightRadius="@dimen/radius_10dp"
+                android:topLeftRadius="@dimen/radius_10dp"
+                android:bottomRightRadius="@dimen/radius_10dp"
+                android:bottomLeftRadius="@dimen/radius_10dp"
+                />
+        </shape>
+    </item>
+
+
+
+</layer-list>
+    <!--
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:angle="0" android:startColor="#45e4fb" android:endColor = "#0b2455" android:type="radial" android:gradientRadius="150dp"/>
+    <stroke android:width="3dp" android:color="#B1BCBE"  />
+    <corners android:radius="10dp"/>
+    <padding android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp" />
+    </shape>
+    -->
+
+

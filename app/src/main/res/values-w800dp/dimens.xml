@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="text_19_sp">30.0sp</dimen>
+    <dimen name="width_170dp">350dp</dimen>
+    <dimen name="padding_10dp">20dp</dimen>
+    <dimen name="text_25_sp_w">50sp</dimen>
+    <dimen name="width_100dp">200dp</dimen>
+    <dimen name="height_130dp">300dp</dimen>
+    <dimen name="width_10dp">22dp</dimen>
+    <dimen name="padding_5dp">12dp</dimen>
+    <dimen name="width_70dp">140dp</dimen>
+    <dimen name="height_30dp">65dp</dimen>
+    <dimen name="height_40dp">90dp</dimen>
+    <dimen name="padding_20dp">50dp</dimen>
+    <dimen name="width_30dp">70dp</dimen>
+    <dimen name="stroke_1dp">3dp</dimen>
+    <dimen name="radius_10dp">30dp</dimen>
+    <dimen name="width_60dp">120dp</dimen>
+    <dimen name="height_80dp">160dp</dimen>
+    <dimen name="width_310dp">620dp</dimen>
+    <dimen name="margin_1dp">2dp</dimen>
+    <dimen name="text_35_sp_w">70sp</dimen>
+    <dimen name="width_24dp">48dp</dimen>
+    <dimen name="design_bottom_navigation_text_size" tools:override="true" >22sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">25sp</dimen>
+    <dimen name="bnv_height">100dp</dimen>
+    <dimen name="width_220dp">400dp</dimen>
+    <dimen name="text_20_sp_w">40sp</dimen>
+    <dimen name="padding_30dp">80dp</dimen>
+    <dimen name="diameter_75dp">120dp</dimen>
+    <dimen name="padding_15dp">30dp</dimen>
+    <dimen name="padding_settings_5dp">5dp</dimen>
+    <dimen name="img_size_50dp">80dp</dimen>
+    <dimen name="padding_sprite_25dp">42dp</dimen>
+    <dimen name="margin_sprite_vertical_9dp">17dp</dimen>
+    <dimen name="margin_sprite_left_5dp">30dp</dimen>
+</resources>
+
+    <!--Rest of the tablets -->

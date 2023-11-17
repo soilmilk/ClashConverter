@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_100dp">100dp</dimen>
+    <dimen name="height_50dp">50dp</dimen>
+    <dimen name="text_20_sp_h">20sp</dimen>
+    <dimen name="text_25_sp_h">25sp</dimen>
+    <dimen name="gold_text_35_sp_h">35sp</dimen>
+    <dimen name="radius_50dp">50dp</dimen>
+    <dimen name="elevation_2dp">2dp</dimen>
+    <dimen name="elevation_4dp">4dp</dimen>
+    <dimen name="elevation_8dp">8dp</dimen>
+    <dimen name="padding_50dp_h">50dp</dimen>
+</resources>
+
+
+<!--All Phones -->

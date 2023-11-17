@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/clash_grey">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/padding_5dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_chest_data"
+            android:padding="@dimen/padding_10dp"
+            android:layout_marginVertical="@dimen/padding_5dp"
+            >
+
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:id="@+id/tv_commons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="23"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20_sp_h"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <ImageView
+                android:id="@+id/wc1"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:src="@drawable/wc_common"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_commons"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:id="@+id/tv_commons_goldvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|end"
+                android:hint="22225"
+                android:textSize="@dimen/text_20_sp_h"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gold1"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/gold1"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:src="@drawable/gold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginVertical="@dimen/padding_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_chest_data"
+            android:padding="@dimen/padding_10dp"
+            >
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:id="@+id/tv_rares"
+                android:hint="219.6"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20_sp_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <ImageView
+                android:id="@+id/wc2"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:src="@drawable/wc_rare"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_rares"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:id="@+id/tv_rares_goldvalue"
+                android:hint="65.7"
+                android:textSize="@dimen/text_20_sp_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|end"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gold2"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/gold2"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:src="@drawable/gold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/padding_5dp"
+            android:background="@drawable/bg_chest_data"
+            android:padding="@dimen/padding_10dp"
+
+            >
+
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:id="@+id/tv_epics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="23"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20_sp_h"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <ImageView
+                android:id="@+id/wc3"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:src="@drawable/wc_epic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_epics"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:id="@+id/tv_epics_goldvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|end"
+                android:hint="222"
+                android:textSize="@dimen/text_20_sp_h"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gold3"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/gold3"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:src="@drawable/gold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/padding_5dp"
+            android:background="@drawable/bg_chest_data"
+            android:padding="@dimen/padding_10dp"
+
+            >
+
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:id="@+id/tv_legendaries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="23"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20_sp_h"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <ImageView
+                android:id="@+id/wc4"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:src="@drawable/wc_legendary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_legendaries"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:id="@+id/tv_legendaries_goldvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|end"
+                android:hint="25"
+                android:textSize="@dimen/text_20_sp_h"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gold4"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/gold4"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:src="@drawable/gold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_chest_data"
+            android:padding="@dimen/padding_10dp"
+            >
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:id="@+id/tv_champions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="23"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20_sp_h"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <ImageView
+                android:id="@+id/wc5"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:src="@drawable/wc_champion"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_champions"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:id="@+id/tv_champions_goldValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|end"
+                android:hint="22225"
+                android:textSize="@dimen/text_20_sp_h"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gold5"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/gold5"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:src="@drawable/gold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/padding_10dp"
+            >
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:id="@+id/tv_goldAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="+22225"
+                android:gravity="center|end"
+                android:textSize="@dimen/text_25_sp_w"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gold6"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/gold6"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:src="@drawable/gold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:id="@+id/tv_totalGold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="22225"
+                android:textSize="@dimen/height_40dp"
+                android:textColor="@color/red"
+                android:gravity="center|end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gold7"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/gold7"
+                android:layout_width="@dimen/height_50dp"
+                android:layout_height="@dimen/height_50dp"
+                android:src="@drawable/gold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

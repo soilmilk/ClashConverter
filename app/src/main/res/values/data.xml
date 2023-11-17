@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="common_to_gold">5</integer>
+    <integer name="common_to_ewc">1</integer>
+    <integer name="rare_to_gold">50</integer>
+    <integer name="rare_to_ewc">5</integer>
+    <integer name="epic_to_gold">500</integer>
+    <integer name="epic_to_ewc">20</integer>
+    <integer name="legendary_to_gold">20000</integer>
+    <integer name="legendary_to_ewc">1500</integer>
+    <integer name="champion_to_gold">40000</integer>
+    <integer name="champion_to_ewc">4000</integer>
+    <integer name="book_to_ewc">5000</integer>
+    <integer name="ewc_to_gold">5</integer>
+    <integer name="boost_potion_gems">50</integer>
+    <integer name="number_of_arenas">23</integer>
+    <integer name="banner_gems">50</integer>
+    <integer name="chest_key_gems">72</integer>
+
+    <integer-array name="common_upgrade_cards">
+        <item>1</item>  <!--1 to 2-->
+        <item>4</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>400</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>3000</item>
+        <item>5000</item>  <!--13 to 14-->
+    </integer-array>
+    <integer-array name="rare_upgrade_cards">
+        <item>1</item>  <!--3 to 4-->
+        <item>4</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>400</item>
+        <item>500</item>
+        <item>750</item>
+        <item>1250</item> <!--13 to 14-->
+    </integer-array>
+    <integer-array name="epic_upgrade_cards">
+        <item>1</item>  <!--6 to 7-->
+        <item>4</item>
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item> <!--13 to 14-->
+    </integer-array>
+    <integer-array name="legendary_upgrade_cards">
+        <item>1</item>  <!--9 to 10-->
+        <item>4</item>
+        <item>6</item>
+        <item>10</item>
+        <item>20</item> <!--13 to 14-->
+    </integer-array>
+    <integer-array name="champion_upgrade_cards">
+        <item>1</item>  <!--11 to 12-->
+        <item>8</item>
+        <item>20</item> <!--13 to 14-->
+    </integer-array>
+
+    <integer-array name="upgradeGold">
+        <item>5</item>   <!--1 to 2-->
+        <item>20</item>
+        <item>50</item>
+        <item>150</item>
+        <item>400</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>4000</item>
+        <item>8000</item>
+        <item>15000</item>
+        <item>35000</item>
+        <item>75000</item>
+        <item>100000</item> <!--13 to 14-->
+    </integer-array>
+
+
+
+    <string-array name="goldToGemString">
+        <item>0.06</item>  <!-- first offer -->
+        <item>0.05</item>
+        <item>0.045</item>
+    </string-array>
+
+    <string-array name="gemOfferCurrencyString">
+        <item>80</item>  <!-- first offer -->
+        <item>500</item>
+        <item>1200</item>
+        <item>2500</item>
+        <item>6500</item>
+        <item>14000</item>
+    </string-array>
+
+    <string-array name="usd">
+        <item>$0.99</item>  <!-- first offer -->
+        <item>$4.99</item>
+        <item>$9.99</item>
+        <item>$19.99</item>
+        <item>$49.99</item>
+        <item>$99.99</item>
+    </string-array>
+
+    <string-array name="rupees">
+        <item>₹89</item>  <!-- first offer -->
+        <item>₹449</item>
+        <item>₹899</item>
+        <item>₹1799</item>
+        <item>₹4499</item>
+        <item>₹8900</item>
+    </string-array>
+
+    <string-array name="yen">
+        <item>¥160</item>  <!-- first offer -->
+        <item>¥800</item>
+        <item>¥1600</item>
+        <item>¥3200</item>
+        <item>¥8000</item>
+        <item>¥15800</item>
+    </string-array>
+
+
+
+
+    <integer-array name="shardToGoldString">
+        <item>5000</item>  <!-- common -->
+        <item>12500</item>  <!-- rare -->
+        <item>20000</item>	<!-- epic -->
+        <item>80000</item>	<!-- legendary -->
+        <item>160000</item>	<!-- champion -->
+    </integer-array>
+
+    <integer-array name="goldOffer">
+        <item>25000</item>  <!-- 1st offer -->
+        <item>12500</item>  <!-- 2nd -->
+        <item>20000</item>	<!-- 3rd -->
+    </integer-array>
+
+    <integer name="shopTokenToGold" >5</integer>
+
+    <string name="common_to_gold" translatable="false">5</string>
+    <string name="common_to_ewc" translatable="false">1</string>
+
+    <string name="rare_to_gold" translatable="false">50</string>
+    <string name="rare_to_ewc" translatable="false">5</string>
+    <string name="ewc_to_rare" translatable="false">1/5</string>
+
+    <string name="epic_to_gold" translatable="false">500</string>
+    <string name="epic_to_ewc" translatable="false">20</string>
+    <string name="ewc_to_epic" translatable="false">1/20</string>
+
+    <string name="legendary_to_gold" translatable="false">20000</string>
+    <string name="legendary_to_ewc" translatable="false">1500</string>
+    <string name="ewc_to_legendary" translatable="false">1/1500</string>
+
+    <string name="champion_to_gold" translatable="false">40000</string>
+    <string name="champion_to_ewc" translatable="false">4000</string>
+    <string name="ewc_to_champion" translatable="false">1/4000</string>
+
+    <string name="book_to_ewc" translatable="false">5000</string>
+
+    <!-- 2000 gold for 400 shop tokens-->
+    <string name="shopTokenToGoldString" translatable="false">5</string>
+
+    <string-array name="currencySymbols">
+        <item>$</item>
+        <item>€</item>
+        <item>£</item>
+        <item>¥</item>
+        <item>₩</item>
+        <item>₽</item>
+        <item>₹</item>
+        <item>₱</item>
+        <item>¤</item>
+    </string-array>
+
+    <string-array name="currencies">
+        <item>USD</item>
+        <item>Rupees</item>
+        <item>Yen</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CalculateFragment"
+    android:id="@+id/fragment_calculate"
+    android:orientation="vertical">
+
+    <FrameLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl">
+        <com.google.android.material.tabs.TabLayout
+            android:paddingTop="@dimen/padding_5dp"
+            android:layout_marginHorizontal="@dimen/padding_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_grey"
+            android:id="@+id/tabLayout"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabMaxWidth="0dp"
+            app:tabTextColor="@color/white"
+            app:tabTextAppearance="@style/tab_text_appearance"
+            app:tabIndicatorGravity="stretch"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorAnimationMode="elastic" app:tabIconTint="@color/your_color_selector"
+            app:tabIndicator="@drawable/tab_indicator"
+            app:tabIndicatorColor="#e3eef2"/>
+
+    </FrameLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginBottom="@dimen/padding_5dp"
+        style="@style/CustomCardViewStyle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="@color/clash_grey"
+        app:cardElevation="@dimen/elevation_4dp">
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPagerSprites"/>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

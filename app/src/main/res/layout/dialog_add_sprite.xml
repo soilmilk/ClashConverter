@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/add_sprite_background"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/padding_5dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_result"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_close"
+            android:layout_width="@dimen/radius_50dp"
+            android:layout_height="@dimen/radius_50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/button_cancel" />
+
+            <ImageButton
+                android:id="@+id/ib_close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+
+        <TextView
+            android:fontFamily="@font/clash_regular"
+            android:layout_marginVertical="@dimen/padding_50dp_h"
+            android:layout_marginHorizontal="@dimen/diameter_75dp"
+            android:id="@+id/tv_enter_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_amount"
+            android:textSize="@dimen/text_25_sp_h"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:fontFamily="@font/clash_regular"
+            android:background="@drawable/bg_type_button"
+            android:id="@+id/edt_enter_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10dp"
+            android:clickable="true"
+            android:layout_margin="@dimen/padding_30dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="ex. 5"
+            android:text="1"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/text_35_sp_w"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_enter_amount" />
+
+        <RelativeLayout
+            android:id="@+id/rl_yes"
+            android:layout_width="@dimen/width_170dp"
+            android:layout_height="@dimen/height_100dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/padding_30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_enter_amount"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/yes_button"
+                android:layout_centerInParent="true"
+                android:elevation="7dp"
+                android:paddingVertical="@dimen/padding_10dp"/>
+
+            <ImageButton
+                android:id="@+id/b_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/padding_10dp"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:layout_marginEnd="@dimen/padding_10dp"
+                android:layout_marginBottom="@dimen/padding_10dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/bg_type_button"
+                android:elevation="6dp"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

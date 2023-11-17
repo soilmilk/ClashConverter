@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_80dp"
+    android:paddingLeft="@dimen/padding_5dp"
+    >
+        <TextView
+            android:fontFamily="@font/clash_regular"
+            android:textColor="@color/clash_white"
+            android:id="@+id/tv_level_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13"
+            android:textSize="@dimen/text_20_sp_h"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="@dimen/height_40dp"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_level_start"
+            android:src="@drawable/baseline_arrow_right_alt_24" />
+        <TextView
+            android:fontFamily="@font/clash_regular"
+            android:textColor="@color/clash_white"
+            android:id="@+id/tv_level_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14"
+            android:textSize="@dimen/text_20_sp_h"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_arrow"
+            />
+        <TextView
+            android:fontFamily="@font/clash_regular"
+            android:textColor="@color/clash_white"
+            android:id="@+id/tv_parenthesis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ("
+            android:textSize="@dimen/text_20_sp_h"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_level_end"
+            />
+        <TextView
+            android:fontFamily="@font/clash_regular"
+            android:textColor="@color/clash_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_amount"
+            android:text="5000"
+            android:textSize="@dimen/text_20_sp_h"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_parenthesis" />
+        <ImageView
+            android:id="@+id/iv_card_or_gold"
+            android:layout_width="@dimen/width_30dp"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wc_common"
+            android:layout_toRightOf="@+id/tv_amount"
+            />
+        <TextView
+            android:fontFamily="@font/clash_regular"
+            android:textColor="@color/clash_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"
+            android:textSize="@dimen/text_20_sp_h"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_card_or_gold"
+            />
+
+</RelativeLayout>

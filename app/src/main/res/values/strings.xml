@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Clash Royale Project</string>
+
+    <string name="title_activity_settings2">Settings2</string>
+    <string name="arena">Arena</string>
+    <string name="calculate">Calculate</string>
+    <string name="currency">Currency</string>
+    <string name="currency_type_based_on_language">$ USD</string>
+
+
+    <string name="rating">Rating: </string>
+    <string name="value">VALUE</string>
+    <string name="name">Name:</string>
+    <string name="symbol">Symbol:</string>
+    <string name="goldDescription">gold coin</string>
+    <string name="enter_amount">Enter Amount:</string>
+    <string name="exceeded_maximum_amount">Exceeded maximum amount.</string>
+    <string name="invalid_answer">Invalid answer.</string>
+    <string name="not_found">"Chest is not found (arena "</string>
+    <string name="max_amount_items">"Maximum amount of items is "</string>
+    <string name="min_amount_gems">"Minimum amount of gems is "</string>
+    <string name="max_amount_gems">Maximum amount of gems is 800.</string>
+
+
+</resources>

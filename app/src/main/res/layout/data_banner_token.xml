@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/clash_grey"
+    android:paddingHorizontal="10dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_100dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_chest_data"
+            android:padding="@dimen/padding_10dp"
+            android:layout_marginVertical="@dimen/padding_5dp"
+            android:weightSum="1"
+            >
+                <TextView
+                    android:fontFamily="@font/clash_regular"
+                    android:id="@+id/tv_100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:textSize="@dimen/text_20_sp_w"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></TextView>
+                <ImageView
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_width="@dimen/height_40dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/iv_banner_token"
+                    android:src="@drawable/banner_token"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_100"
+                    app:layout_constraintTop_toTopOf="parent">
+                </ImageView>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/width_170dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/padding_5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_radiobutton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/ib_subtract"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/baseline_indeterminate_check_box_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.3" />
+
+                <TextView
+                    android:fontFamily="@font/clash_regular"
+                    android:id="@+id/banner_token_gems"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:hint="800"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_19_sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHeight_percent="1"
+                    app:layout_constraintLeft_toRightOf="@id/ib_subtract"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <ImageView
+                    android:id="@+id/iv_gem"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gem"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintLeft_toRightOf="@id/banner_token_gems"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.15" />
+
+                <ImageButton
+                    android:id="@+id/ib_add"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/baseline_add_box_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintLeft_toRightOf="@id/iv_gem"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:fontFamily="@font/clash_regular"
+                android:padding="2dp"
+                android:id="@+id/tv_totalGoldBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|end"
+                android:hint="800000"
+                android:textSize="@dimen/gold_text_35_sp_h"
+                android:textColor="@color/red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/gold9"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/gold9"
+                android:layout_width="@dimen/width_60dp"
+                android:layout_height="@dimen/width_60dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/gold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

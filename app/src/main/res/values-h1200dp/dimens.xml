@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_50dp">100dp</dimen>
+    <dimen name="height_100dp">200dp</dimen>
+    <dimen name="text_20_sp_h">60sp</dimen>
+    <dimen name="text_25_sp_h">70sp</dimen>
+    <dimen name="gold_text_35_sp_h">80sp</dimen>
+    <dimen name="radius_50dp">100dp</dimen>
+    <dimen name="elevation_2dp">5dp</dimen>
+    <dimen name="elevation_4dp">7.5dp</dimen>
+    <dimen name="elevation_8dp">15dp</dimen>
+    <dimen name="padding_50dp_h">70dp</dimen>
+</resources>
+
+    <!--Tablets -->

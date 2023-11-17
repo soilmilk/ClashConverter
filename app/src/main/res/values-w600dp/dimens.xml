@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="width_100dp">150dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="text_19_sp">22.5sp</dimen>
+    <dimen name="width_170dp">270dp</dimen>
+    <dimen name="height_100dp">150dp</dimen>
+    <dimen name="padding_10dp">15dp</dimen>
+    <dimen name="text_25_sp_w">25sp</dimen>
+    <dimen name="height_50dp">75dp</dimen>
+    <dimen name="height_130dp">195dp</dimen>
+    <dimen name="width_10dp">15dp</dimen>
+    <dimen name="padding_5dp">7.5dp</dimen>
+    <dimen name="width_70dp">105dp</dimen>
+    <dimen name="height_30dp">45dp</dimen>
+    <dimen name="height_40dp">60dp</dimen>
+    <dimen name="padding_20dp">30dp</dimen>
+    <dimen name="width_30dp">45dp</dimen>
+    <dimen name="stroke_1dp">2dp</dimen>
+    <dimen name="radius_10dp">30dp</dimen>
+    <dimen name="width_60dp">90dp</dimen>
+    <dimen name="height_80dp">120dp</dimen>
+    <dimen name="width_310dp">460dp</dimen>
+    <dimen name="margin_1dp">1dp</dimen>
+    <dimen name="text_35_sp_w">50sp</dimen>
+    <dimen name="width_24dp">36dp</dimen>
+    <dimen name="design_bottom_navigation_text_size" tools:override="true" >22sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">25sp</dimen>
+    <dimen name="bnv_height">90dp</dimen>
+    <dimen name="width_220dp">340dp</dimen>
+    <dimen name="text_20_sp_w">30sp</dimen>
+    <dimen name="padding_30dp">30dp</dimen>
+    <dimen name="diameter_75dp">100dp</dimen>
+    <dimen name="padding_15dp">18dp</dimen>
+    <dimen name="padding_settings_5dp">5dp</dimen>
+    <dimen name="img_size_50dp">60dp</dimen>
+    <dimen name="padding_sprite_25dp">30dp</dimen>
+    <dimen name="margin_sprite_vertical_9dp">12dp</dimen>
+    <dimen name="margin_sprite_left_5dp">15dp</dimen>
+    <!--Both nexus 7 tablets have a 600dp width-->
+    <!-- unfolded foldable -->
+</resources>

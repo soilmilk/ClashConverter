@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+    <item android:bottom="@dimen/padding_10dp"
+    android:left="@dimen/padding_10dp"
+    android:right="@dimen/padding_10dp"
+    android:top="@dimen/padding_15dp">
+        <shape android:shape="rectangle" >
+            <gradient
+                android:endColor="#C3D5F4"
+                android:gradientRadius="2400"
+                android:centerX="0.75"
+                android:centerY="0.6"
+                android:startColor="#010C35"
+                android:type="radial"/>
+
+
+            <corners
+                android:topRightRadius="@dimen/radius_10dp"
+                android:topLeftRadius="@dimen/radius_10dp"
+                android:bottomRightRadius="@dimen/radius_10dp"
+                android:bottomLeftRadius="@dimen/radius_10dp"
+                />
+        </shape>
+    </item>
+
+
+    <item
+        android:bottom="@dimen/padding_20dp"
+        android:left="@dimen/padding_20dp"
+        android:right="@dimen/padding_20dp"
+        android:top="@dimen/padding_20dp">
+        <shape android:shape="rectangle" >
+            <gradient
+                android:endColor="#778BEC"
+                android:gradientRadius="4000"
+                android:centerX="0.5"
+                android:centerY="0.5"
+                android:startColor="#202953"
+                android:type="radial"/>
+            <corners
+                android:topRightRadius="@dimen/radius_10dp"
+                android:topLeftRadius="@dimen/radius_10dp"
+                android:bottomRightRadius="@dimen/radius_10dp"
+                android:bottomLeftRadius="@dimen/radius_10dp"
+                />
+        </shape>
+    </item>
+
+
+
+</layer-list>
+
+
+
