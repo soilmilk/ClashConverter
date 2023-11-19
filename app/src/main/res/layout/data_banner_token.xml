@@ -23,7 +23,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:gravity="center"
-                    android:hint="100"
+                    android:text="100"
                     android:textSize="@dimen/text_20_sp_w"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +40,7 @@
                     app:layout_constraintTop_toTopOf="parent">
                 </ImageView>
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="@dimen/width_170dp"
+                android:layout_width="@dimen/width_165dp"
                 android:layout_height="wrap_content"
                 android:paddingVertical="@dimen/padding_5dp"
                 android:layout_gravity="center"
@@ -68,7 +68,7 @@
                     android:gravity="center"
                     android:hint="800"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/text_19_sp"
+                    android:textSize="@dimen/text_15_sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHeight_percent="1"
                     app:layout_constraintLeft_toRightOf="@id/ib_subtract"

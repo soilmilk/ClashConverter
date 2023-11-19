@@ -12,7 +12,7 @@
         android:fontFamily="@font/clash_regular"
         android:id="@+id/arenaNumber"
         android:layout_gravity="center"
-        android:layout_width="@dimen/width_170dp"
+        android:layout_width="@dimen/width_165dp"
         android:layout_height="@dimen/height_100dp"
         android:gravity="center_vertical"
         android:paddingLeft="10dp"

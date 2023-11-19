@@ -26,6 +26,8 @@ import android.widget.Toast;
 import com.example.clashroyaleproject.Util.ChestData;
 import com.google.android.material.tabs.TabLayout;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 
@@ -47,7 +49,7 @@ public class CalculateFragment extends Fragment implements CalculateFragmentInte
     private String mParam2;
     private boolean invalidChest;
 
-    private View v;
+    private View v, v1;
     private ItemViewModel itemViewModel;
 
 
@@ -57,6 +59,8 @@ public class CalculateFragment extends Fragment implements CalculateFragmentInte
     private FragmentManager  fragmentManager;
 
     private int layout;
+    private Toast t;
+    private TextView tv;
 
     private Resources resources;
 
@@ -105,11 +109,13 @@ public class CalculateFragment extends Fragment implements CalculateFragmentInte
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-
-
         v =  inflater.inflate(R.layout.fragment_calculate, container, false);
 
+        LayoutInflater l = getLayoutInflater();
+        v1 = l.inflate(R.layout.toast,null);
+        t = new Toast(getContext());
+        tv = v1.findViewById(R.id.tv_toast);
+        t.setDuration(Toast.LENGTH_SHORT);
 
         tabLayout = v.findViewById(R.id.tabLayout);
         viewPager2 = v.findViewById(R.id.viewPagerSprites);
@@ -164,7 +170,7 @@ public class CalculateFragment extends Fragment implements CalculateFragmentInte
 
 
         //Keeping an instance of CalculateFragment in CardsFragment and holding the CalculateFragment view. Better to create an abstract class and get fragments to inherit it and use onItemClicked.
-        //This might be leaking bc u are referencing v
+        //This might be chestData.legendaries * resources.getInteger(R.integer.legendary_to_ewc)ing bc u are referencing v
         View view = v.findViewById(R.id.fragment_calculate);
 
         View popupView = LayoutInflater.from(getActivity()).inflate(R.layout.popup_sprite, null);
@@ -290,11 +296,6 @@ public class CalculateFragment extends Fragment implements CalculateFragmentInte
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                LayoutInflater l = getLayoutInflater();
-                View v1 = l.inflate(R.layout.toast,null);
-                Toast t = new Toast(getContext());
-                TextView tv = v1.findViewById(R.id.tv_toast);
-                t.setDuration(Toast.LENGTH_SHORT);
 
                 if (invalidChest){
                     tv.setText(resources.getString(R.string.not_found) + itemViewModel.getArena().getValue() +  ")");
@@ -456,4 +457,13 @@ public class CalculateFragment extends Fragment implements CalculateFragmentInte
         final InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
+
+    @Override
+    public void customToast(String message) {
+        tv.setText(message);
+        t.setView(v1);
+        t.show();
+    }
+
+
 }

@@ -14,6 +14,7 @@
         <!-- Customize your theme here. -->
         <item name="fontFamily">@font/clash_regular</item>
     </style>
+    
     <style name="Theme.ClashRoyaleProject.NoActionBar" >
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -21,5 +22,11 @@
     <style name="Theme.ClashRoyaleProject.AppBarOverlay"
         parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.ClashRoyaleProject.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+
+
 
 </resources>

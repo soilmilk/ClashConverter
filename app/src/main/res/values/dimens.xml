@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
       <dimen name="fab_margin">16dp</dimen>
-    <dimen name="text_19_sp">19.0sp</dimen>
-    <dimen name="width_170dp">170dp</dimen>
+    <dimen name="text_15_sp">15.0sp</dimen>
+    <dimen name="width_165dp">165dp</dimen>
     <dimen name="height_100dp">100dp</dimen>
     <dimen name="padding_10dp">10dp</dimen>
     <dimen name="text_25_sp_w">25sp</dimen>
@@ -11,7 +11,7 @@
     <dimen name="height_130dp">130dp</dimen>
     <dimen name="width_10dp">10dp</dimen>
     <dimen name="padding_5dp">5dp</dimen>
-    <dimen name="width_70dp">70dp</dimen>
+    <dimen name="width_63dp">63dp</dimen>
     <dimen name="height_30dp">30dp</dimen>
     <dimen name="height_40dp">40dp</dimen>
     <dimen name="padding_20dp">20dp</dimen>
@@ -44,6 +44,7 @@
     <dimen name="margin_sprite_vertical_9dp">9dp</dimen>
     <dimen name="margin_sprite_left_5dp">7dp</dimen>
     <dimen name="padding_50dp_h">50dp</dimen>
+    <dimen name="width_90dp">90dp</dimen>
 </resources>
 
 

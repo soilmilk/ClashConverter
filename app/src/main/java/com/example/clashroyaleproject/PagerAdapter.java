@@ -330,18 +330,20 @@ public class PagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     });
                 } else if (layout[1] == R.layout.data_banner_token) {
                     int gems = resources.getInteger(R.integer.banner_gems);
-                    viewHolder1.bannerTokenGems.setText(resources.getInteger(R.integer.banner_gems));
+                    viewHolder1.bannerTokenGems.setText(String.valueOf(resources.getInteger(R.integer.banner_gems)));
                     sprite.bannerGems = gems;
 
 
                     viewHolder1.totalGoldBanner.setText(String.valueOf(roundDecimal(gems / itemViewModel.getGoldToGem().getValue(), 0)));
 
+
+
+
                     viewHolder1.subtract.setOnClickListener(view -> {
                         viewHolder1.subtract.startAnimation(AnimationUtils.loadAnimation(context, R.anim.bounce));
                         int amt = Integer.parseInt(viewHolder1.bannerTokenGems.getText().toString());
                         if (amt == gems) {
-                            Toast.makeText(context, resources.getString(R.string.min_amount_gems) + gems + ".",
-                                    Toast.LENGTH_LONG).show();
+                            calculateFragment.customToast(resources.getString(R.string.min_amount_gems) + gems + ".");
                         } else {
                             viewHolder1.bannerTokenGems.setText(String.valueOf(amt -= gems));
                             sprite.bannerGems -= gems;
@@ -356,8 +358,8 @@ public class PagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                         viewHolder1.add.startAnimation(AnimationUtils.loadAnimation(context, R.anim.bounce));
                         int amt = Integer.parseInt(viewHolder1.bannerTokenGems.getText().toString());
                         if (amt == 800) {
-                            Toast.makeText(context, resources.getString(R.string.max_amount_gems),
-                                    Toast.LENGTH_LONG).show();
+                            calculateFragment.customToast(resources.getString(R.string.max_amount_gems));
+
                         } else {
                             viewHolder1.bannerTokenGems.setText(String.valueOf(amt += gems));
                             sprite.bannerGems += gems;

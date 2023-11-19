@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <dimen name="text_19_sp">30.0sp</dimen>
-    <dimen name="width_170dp">350dp</dimen>
+    <dimen name="text_15_sp">30.0sp</dimen>
+    <dimen name="width_165dp">350dp</dimen>
     <dimen name="padding_10dp">20dp</dimen>
     <dimen name="text_25_sp_w">50sp</dimen>
     <dimen name="width_100dp">200dp</dimen>
     <dimen name="height_130dp">300dp</dimen>
     <dimen name="width_10dp">22dp</dimen>
     <dimen name="padding_5dp">12dp</dimen>
-    <dimen name="width_70dp">140dp</dimen>
+    <dimen name="width_63dp">140dp</dimen>
     <dimen name="height_30dp">65dp</dimen>
     <dimen name="height_40dp">90dp</dimen>
     <dimen name="padding_20dp">50dp</dimen>
@@ -35,6 +35,7 @@
     <dimen name="padding_sprite_25dp">42dp</dimen>
     <dimen name="margin_sprite_vertical_9dp">17dp</dimen>
     <dimen name="margin_sprite_left_5dp">30dp</dimen>
+    <dimen name="width_90dp">90dp</dimen>
 </resources>
 
     <!--Rest of the tablets -->

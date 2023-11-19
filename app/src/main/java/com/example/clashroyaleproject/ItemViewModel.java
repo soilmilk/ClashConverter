@@ -33,7 +33,7 @@ public class ItemViewModel extends ViewModel {
     private final MutableLiveData<String> currency = new MutableLiveData<>();
     private MutableLiveData<Integer> displayedCost = new MutableLiveData<>();
 
-
+    private MutableLiveData<Integer> currencyPos = new MutableLiveData<>();
 
     private final MutableLiveData<Double> baseGoldValue  = new MutableLiveData<>();
     
@@ -53,6 +53,7 @@ public class ItemViewModel extends ViewModel {
         _ssa.setValue(arr2);
         type.setValue("ewc");
         currency.setValue("USD");
+        currencyPos.setValue(0);
         arena.setValue(numOfArenas+1);
         changeType();
         displayedCost.setValue(0);
@@ -257,7 +258,9 @@ public class ItemViewModel extends ViewModel {
         return ssa;
     }
 
-
+    public MutableLiveData<Integer> getCurrencyPos() {
+        return currencyPos;
+    }
 
     public MutableLiveData<Integer> getIgaDisplay(){
         return igaDisplay;

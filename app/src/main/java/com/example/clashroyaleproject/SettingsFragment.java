@@ -136,6 +136,7 @@ public class SettingsFragment extends Fragment {
        spinnerCurrencyToGem.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
            @Override
            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+               itemViewModel.getCurrencyPos().setValue(i);
                //Substring to remove the currency symbol in front (e.g. $0.99 -> 0.99)
                itemViewModel.getGemToCurrency().setValue( Double.parseDouble(currencyCostsArray[i].substring(1))/Double.parseDouble(gemsOfferCurrency[i]));
            }
@@ -188,15 +189,10 @@ public class SettingsFragment extends Fragment {
         });
 
 
-
-
-        first = true;
-
+        
+        System.out.println("first is true");
         itemViewModel.getCurrency().observe(getViewLifecycleOwner(), currentCurrency -> {
-            if (first){
-                first = false;
-            } else {
-
+                System.out.println("here");
                 spinnerCurrencyToGemAdapter.clear();
                 String[] newCurrencyCostsArray = new String[0];
                 switch (currentCurrency) {
@@ -216,8 +212,8 @@ public class SettingsFragment extends Fragment {
                 spinnerCurrencyToGemAdapter.changeCurrency(newCurrencyCostsArray);
                 //After spinner change, set the selection to 0 to set new gemToCurrency ratio.
                 spinnerCurrencyToGem.setAdapter(spinnerCurrencyToGemAdapter);
-                spinnerCurrencyToGem.setSelection(0);
-            }
+                spinnerCurrencyToGem.setSelection(itemViewModel.getCurrencyPos().getValue());
+
         });
 
         //A change in arena determines the contents of the chests.

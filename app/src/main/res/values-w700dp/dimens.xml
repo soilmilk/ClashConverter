@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <dimen name="width_170dp">350dp</dimen>
+    <dimen name="width_165dp">350dp</dimen>
     <dimen name="text_25_sp_w">35sp</dimen>
     <dimen name="width_100dp">100dp</dimen>
     <dimen name="height_130dp">130dp</dimen>
     <dimen name="width_10dp">10dp</dimen>
     <dimen name="padding_5dp">5dp</dimen>
-    <dimen name="width_70dp">70dp</dimen>
+    <dimen name="width_63dp">65dp</dimen>
     <dimen name="height_30dp">30dp</dimen>
     <dimen name="height_40dp">40dp</dimen>
     <dimen name="padding_20dp">20dp</dimen>
@@ -32,6 +32,7 @@
     <dimen name="padding_sprite_25dp">20dp</dimen>
     <dimen name="margin_sprite_vertical_9dp">8dp</dimen>
     <dimen name="margin_sprite_left_5dp">5dp</dimen>
+    <dimen name="width_90dp">155dp</dimen>
 </resources>
 
 <!-- Tablet: Nexus 9 -->

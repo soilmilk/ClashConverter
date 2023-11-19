@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Clash Royale Project</string>
+    <string name="app_name">ClashConverter</string>
 
     <string name="title_activity_settings2">Settings2</string>
     <string name="arena">Arena</string>

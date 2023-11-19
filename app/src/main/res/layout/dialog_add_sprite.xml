@@ -86,7 +86,7 @@
 
         <RelativeLayout
             android:id="@+id/rl_yes"
-            android:layout_width="@dimen/width_170dp"
+            android:layout_width="@dimen/width_165dp"
             android:layout_height="@dimen/height_100dp"
             android:layout_gravity="center"
             android:layout_margin="@dimen/padding_30dp"

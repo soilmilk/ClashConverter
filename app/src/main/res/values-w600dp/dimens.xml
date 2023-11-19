@@ -3,8 +3,8 @@
 
     <dimen name="width_100dp">150dp</dimen>
     <dimen name="fab_margin">24dp</dimen>
-    <dimen name="text_19_sp">22.5sp</dimen>
-    <dimen name="width_170dp">270dp</dimen>
+    <dimen name="text_15_sp">22.5sp</dimen>
+    <dimen name="width_165dp">270dp</dimen>
     <dimen name="height_100dp">150dp</dimen>
     <dimen name="padding_10dp">15dp</dimen>
     <dimen name="text_25_sp_w">25sp</dimen>
@@ -12,7 +12,7 @@
     <dimen name="height_130dp">195dp</dimen>
     <dimen name="width_10dp">15dp</dimen>
     <dimen name="padding_5dp">7.5dp</dimen>
-    <dimen name="width_70dp">105dp</dimen>
+    <dimen name="width_63dp">97dp</dimen>
     <dimen name="height_30dp">45dp</dimen>
     <dimen name="height_40dp">60dp</dimen>
     <dimen name="padding_20dp">30dp</dimen>
@@ -38,6 +38,7 @@
     <dimen name="padding_sprite_25dp">30dp</dimen>
     <dimen name="margin_sprite_vertical_9dp">12dp</dimen>
     <dimen name="margin_sprite_left_5dp">15dp</dimen>
+    <dimen name="width_90dp">108dp</dimen>
     <!--Both nexus 7 tablets have a 600dp width-->
     <!-- unfolded foldable -->
 </resources>
