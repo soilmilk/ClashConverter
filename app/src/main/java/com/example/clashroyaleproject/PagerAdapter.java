@@ -16,7 +16,6 @@ import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -43,7 +42,8 @@ public class PagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     //For card to gold conversions for cards
     private int convertedIntCard = 0;
     //For card to gold conversions for books
-    private int convertIntBook = 0;
+    private int convertGoldIntBook = 0;
+    private int convertEWCIntBook = 0;
     private double convertDoubleCard;
 
 
@@ -238,19 +238,24 @@ public class PagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     viewHolder1.constraintLayoutShardInfo.setVisibility(View.GONE);
                     if (sprite.sprite_image == R.drawable.book_common) {//context is CalculateFragment.this
                         viewHolder1.spinner.setAdapter(new LevelAdapter(resources.getIntArray(R.array.common_upgrade_cards), context, R.drawable.wc_common));
-                        convertIntBook = resources.getInteger(R.integer.common_to_gold);
+                        convertGoldIntBook = resources.getInteger(R.integer.common_to_gold);
+                        convertEWCIntBook = resources.getInteger(R.integer.common_to_ewc);
                     } else if (sprite.sprite_image == R.drawable.book_rare) {
                         viewHolder1.spinner.setAdapter(new LevelAdapter(resources.getIntArray(R.array.rare_upgrade_cards), context, R.drawable.wc_rare));
-                        convertIntBook = resources.getInteger(R.integer.rare_to_gold);
+                        convertGoldIntBook = resources.getInteger(R.integer.rare_to_gold);
+                        convertEWCIntBook = resources.getInteger(R.integer.rare_to_ewc);
                     } else if (sprite.sprite_image == R.drawable.book_epic) {
                         viewHolder1.spinner.setAdapter(new LevelAdapter(resources.getIntArray(R.array.epic_upgrade_cards), context, R.drawable.wc_epic));
-                        convertIntBook = resources.getInteger(R.integer.epic_to_gold);
+                        convertGoldIntBook = resources.getInteger(R.integer.epic_to_gold);
+                        convertEWCIntBook = resources.getInteger(R.integer.epic_to_ewc);
                     } else if (sprite.sprite_image == R.drawable.book_legendary) {
                         viewHolder1.spinner.setAdapter(new LevelAdapter(resources.getIntArray(R.array.legendary_upgrade_cards), context, R.drawable.wc_legendary));
-                        convertIntBook = resources.getInteger(R.integer.legendary_to_gold);
+                        convertGoldIntBook = resources.getInteger(R.integer.legendary_to_gold);
+                        convertEWCIntBook = resources.getInteger(R.integer.legendary_to_ewc);
                     } else if (sprite.sprite_image == R.drawable.magic_coin) {
                         viewHolder1.spinner.setAdapter(new LevelAdapter(resources.getIntArray(R.array.upgradeGold), context, R.drawable.gold));
-                        convertIntBook = 1;
+                        convertGoldIntBook = 1;
+                        convertEWCIntBook = 1;
                     } else if (sprite.sprite_image == R.drawable.evolution_shard || sprite.sprite_image == R.drawable.wild_shard) {
                         viewHolder1.spinner.setVisibility(View.GONE);
                         viewHolder1.relativeLayoutRadioButtons.setVisibility(View.VISIBLE);
@@ -280,23 +285,28 @@ public class PagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                         viewHolder1.radioGroupCards.setOnCheckedChangeListener((radioGroup, id) -> {
                             if (id == R.id.rb_common) {
                                 viewHolder1.spinner.setAdapter(new LevelAdapter(resources.getIntArray(R.array.common_upgrade_cards), context, R.drawable.wc_common));
-                                convertIntBook = resources.getInteger(R.integer.common_to_gold);
+                                convertGoldIntBook = resources.getInteger(R.integer.common_to_gold);
+                                convertEWCIntBook = resources.getInteger(R.integer.common_to_ewc);
                                 sprite.drawable_book_of_books_type = R.drawable.wc_common;
                             } else if (id == R.id.rb_rare) {
                                 viewHolder1.spinner.setAdapter(new LevelAdapter(resources.getIntArray(R.array.rare_upgrade_cards), context, R.drawable.wc_rare));
-                                convertIntBook = resources.getInteger(R.integer.rare_to_gold);
+                                convertGoldIntBook = resources.getInteger(R.integer.rare_to_gold);
+                                convertEWCIntBook = resources.getInteger(R.integer.rare_to_ewc);
                                 sprite.drawable_book_of_books_type = R.drawable.wc_rare;
                             } else if (id == R.id.rb_epic) {
                                 viewHolder1.spinner.setAdapter(new LevelAdapter(resources.getIntArray(R.array.epic_upgrade_cards), context, R.drawable.wc_epic));
-                                convertIntBook = resources.getInteger(R.integer.epic_to_gold);
+                                convertGoldIntBook = resources.getInteger(R.integer.epic_to_gold);
+                                convertEWCIntBook = resources.getInteger(R.integer.epic_to_ewc);
                                 sprite.drawable_book_of_books_type = R.drawable.wc_epic;
                             } else if (id == R.id.rb_legendary) {
                                 viewHolder1.spinner.setAdapter(new LevelAdapter(resources.getIntArray(R.array.legendary_upgrade_cards), context, R.drawable.wc_legendary));
-                                convertIntBook = resources.getInteger(R.integer.legendary_to_gold);
+                                convertGoldIntBook = resources.getInteger(R.integer.legendary_to_gold);
+                                convertEWCIntBook = resources.getInteger(R.integer.legendary_to_ewc);
                                 sprite.drawable_book_of_books_type = R.drawable.wc_legendary;
                             } else if (id == R.id.rb_champion) {
                                 viewHolder1.spinner.setAdapter(new LevelAdapter(resources.getIntArray(R.array.champion_upgrade_cards), context, R.drawable.wc_champion));
-                                convertIntBook = resources.getInteger(R.integer.champion_to_gold);
+                                convertGoldIntBook = resources.getInteger(R.integer.champion_to_gold);
+                                convertEWCIntBook = resources.getInteger(R.integer.champion_to_ewc);
                                 sprite.drawable_book_of_books_type = R.drawable.wc_champion;
                             }
                         });
@@ -312,11 +322,10 @@ public class PagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                             TextView lvlEnd = view.findViewById(R.id.tv_level_end);
 
                             //Setting gv of book to whatever the user chooses
-                            int amount = Integer.parseInt(a.getText().toString()) * convertIntBook;
-                            viewHolder1.totalGoldBook.setText(String.valueOf(amount));
-
-                            sprite.goldValue = amount;
-
+                            int amount = Integer.parseInt(a.getText().toString());
+                            viewHolder1.totalGoldBook.setText(String.valueOf(amount * convertGoldIntBook));
+                            sprite.goldValue = amount * convertGoldIntBook;
+                            sprite.ewcValue = amount * convertEWCIntBook;
                             //Setting added sprite levelStart and levelEnd so RV can display it ex. 13 -> 14.
 
                             sprite.startLevel = Integer.parseInt(lvlStart.getText().toString());

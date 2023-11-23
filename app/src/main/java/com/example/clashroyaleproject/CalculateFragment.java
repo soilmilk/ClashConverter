@@ -342,7 +342,7 @@ public class CalculateFragment extends Fragment implements CalculateFragmentInte
 
                     //If the sprite has a startLevel (e.g. a common book), then loop thru spritesSelected to check if that book with startLevel exists
                     boolean found = false;
-                    if (sprite.startLevel != -1){
+                    if (sprite.startLevel != -1 || sprite.sprite_image == R.drawable.wild_shard || sprite.sprite_image == R.drawable.evolution_shard){
                         for (Sprite s: itemViewModel.getSS().getValue()){
                             if (sprite.areSpritesEqual(s)){
                                 int pos = itemViewModel.getSS().getValue().indexOf(s);

@@ -25,6 +25,8 @@ import android.widget.TextView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 @SuppressWarnings("FieldCanBeLocal")
 public class CalculateActivity extends AppCompatActivity implements spriteSelectedRVAInterface {
@@ -45,10 +47,13 @@ public class CalculateActivity extends AppCompatActivity implements spriteSelect
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculate);
 
+
+
         viewModel = new ViewModelProvider(this).get(ItemViewModel.class);
         resources = getResources();
         spritesSelectedAmount = new ArrayList<>();
         spritesSelected = new ArrayList<>();
+
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bnv);
         NavController navController = Navigation.findNavController(CalculateActivity.this,  R.id.fragmentContainerView);
@@ -78,9 +83,9 @@ public class CalculateActivity extends AppCompatActivity implements spriteSelect
 
         viewModel.setVars(spritesSelected,
                 spritesSelectedAmount,
-                Double.parseDouble(getResources().getStringArray(R.array.goldToGemString)[0]),
+                Double.parseDouble(getResources().getStringArray(R.array.goldToGemString)[2]),
                 1.0/getResources().getInteger(R.integer.shopTokenToGold),
-                Double.parseDouble(getResources().getStringArray(R.array.usd)[0].substring(1)) / Double.parseDouble(getResources().getStringArray(R.array.gemOfferCurrencyString)[0]),
+                Double.parseDouble(getResources().getStringArray(R.array.usd)[5].substring(1)) / Double.parseDouble(getResources().getStringArray(R.array.gemOfferCurrencyString)[0]),
                  resources.getInteger(R.integer.number_of_arenas) - 1);
 
         viewModel.getSSA().observe(CalculateActivity.this, ssa -> rva2.updateSpritesSelectedItems(viewModel.getSS().getValue(), ssa));

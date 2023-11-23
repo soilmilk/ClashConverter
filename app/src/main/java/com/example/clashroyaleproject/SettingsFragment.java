@@ -103,8 +103,8 @@ public class SettingsFragment extends Fragment {
 
 
        SpinnerAdapter spinnerAdapter1 = new SpinnerAdapter(getContext(), R.layout.item_to_gem_item,
-               new String[]{"1000", "10000", "100000"},
-               new String[]{"60", "500", "4500"},
+               new String[]{"100000", "10000", "1000"},
+               new String[]{"4500", "500", "60"},
                "goldToGem",
                new int[] {resources.getColor(R.color.clash_gold), resources.getColor(R.color.clash_white)});
 
@@ -149,6 +149,8 @@ public class SettingsFragment extends Fragment {
 
 
 
+
+
         //Display drop down menu
 
         Spinner spinnerArena = v.findViewById(R.id.spinner_arena);
@@ -189,7 +191,9 @@ public class SettingsFragment extends Fragment {
         });
 
 
-        
+
+
+
         System.out.println("first is true");
         itemViewModel.getCurrency().observe(getViewLifecycleOwner(), currentCurrency -> {
                 System.out.println("here");

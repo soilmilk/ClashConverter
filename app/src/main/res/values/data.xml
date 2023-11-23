@@ -93,39 +93,39 @@
     </string-array>
 
     <string-array name="gemOfferCurrencyString">
-        <item>80</item>  <!-- first offer -->
-        <item>500</item>
-        <item>1200</item>
-        <item>2500</item>
+        <item>14000</item>  <!-- first offer -->
         <item>6500</item>
-        <item>14000</item>
+        <item>2500</item>
+        <item>1200</item>
+        <item>500</item>
+        <item>80</item>
     </string-array>
 
     <string-array name="usd">
-        <item>$0.99</item>  <!-- first offer -->
-        <item>$4.99</item>
-        <item>$9.99</item>
-        <item>$19.99</item>
+        <item>$99.99</item>  <!-- first offer -->
         <item>$49.99</item>
-        <item>$99.99</item>
+        <item>$19.99</item>
+        <item>$9.99</item>
+        <item>$4.99</item>
+        <item>$0.99</item>
     </string-array>
 
     <string-array name="rupees">
-        <item>₹89</item>  <!-- first offer -->
-        <item>₹449</item>
-        <item>₹899</item>
-        <item>₹1799</item>
+        <item>₹8900</item>  <!-- first offer -->
         <item>₹4499</item>
-        <item>₹8900</item>
+        <item>₹1799</item>
+        <item>₹899</item>
+        <item>₹449</item>
+        <item>₹89</item>
     </string-array>
 
     <string-array name="yen">
-        <item>¥160</item>  <!-- first offer -->
-        <item>¥800</item>
-        <item>¥1600</item>
-        <item>¥3200</item>
+        <item>¥15800</item>  <!-- first offer -->
         <item>¥8000</item>
-        <item>¥15800</item>
+        <item>¥3200</item>
+        <item>¥1600</item>
+        <item>¥800</item>
+        <item>¥160</item>
     </string-array>
 
 

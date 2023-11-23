@@ -86,12 +86,20 @@ public class CardsFragment extends Fragment implements SpriteListRVAInterface{
         spriteListLayoutManager = new GridLayoutManager(getActivity(), 4);
         binding.rvSprites.setLayoutManager(spriteListLayoutManager);
 
+        //Setting EWC values
         Resources resources = getResources();
         spritesList[0].ewcValue = resources.getInteger(R.integer.common_to_ewc);
         spritesList[1].ewcValue = resources.getInteger(R.integer.rare_to_ewc);
         spritesList[2].ewcValue = resources.getInteger(R.integer.epic_to_ewc);
         spritesList[3].ewcValue = resources.getInteger(R.integer.legendary_to_ewc);
         spritesList[4].ewcValue = resources.getInteger(R.integer.champion_to_ewc);
+        spritesList[5].ewcValue = 1;
+        spritesList[6].ewcValue = resources.getInteger(R.integer.common_to_ewc) * 5000;
+        spritesList[7].ewcValue = resources.getInteger(R.integer.rare_to_ewc) * 1250;
+        spritesList[8].ewcValue = resources.getInteger(R.integer.epic_to_ewc) * 200;
+        spritesList[9].ewcValue = resources.getInteger(R.integer.legendary_to_ewc) * 20;
+        spritesList[10].ewcValue = resources.getInteger(R.integer.champion_to_ewc) * 20;
+
         rva = new spriteListRecyclerViewAdapter(getContext(), spritesList, CardsFragment.this );
 
         binding.rvSprites.setAdapter(rva);

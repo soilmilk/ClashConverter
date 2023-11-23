@@ -162,7 +162,8 @@ public class ItemViewModel extends ViewModel {
                 currentBaseGoldValue *= goldToShopToken;
                 break;
             case "currency":
-                currentBaseGoldValue *= goldToGem.getValue() * gemToCurrency.getValue();
+                //Gold is tripled so prices are inflated by 3x.
+                currentBaseGoldValue *= goldToGem.getValue() * gemToCurrency.getValue() / 3;
                 break;
             case "ewc":
                 currentBaseGoldValue = ewcValue.getValue();
