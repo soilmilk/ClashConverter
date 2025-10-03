@@ -1,5 +1,5 @@
 # ClashConverter  
-⚔️ Converts and compares in-game resources in **Clash Royale** — gold, gems, tokens, chests, magic items, and more.
+⚔️ Converts and compares in-game resources in **Clash Royale** — gold, gems, tokens, chests, magic items, and more. Analyzes the cost-effectiveness of in-game monetary offers.
 
 ---
 
