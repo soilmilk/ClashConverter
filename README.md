@@ -18,8 +18,7 @@
 ---
 
 ## 📸 Video Demo
-
- [![Watch the video](<img width="291" height="630" alt="Screenshot 2025-10-02 at 7 56 07 PM" src="https://github.com/user-attachments/assets/0dcde2e0-03d3-4fa6-aadf-140e0949ea45" />)](https://youtu.be/your-demo-link)
+https://www.youtube.com/watch?v=UbLvx-k9Ggo
 ---
 
 ## ⚙️ Setup / Installation  
